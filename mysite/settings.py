@@ -102,3 +102,9 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# Adds static file directory for css
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
